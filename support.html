@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BeatAnalyzer – Support</title>
+  <meta name="description" content="Support und häufige Fragen zur App BeatAnalyzer.">
+  <style>
+    :root {
+      --bg: #f7f8fa;
+      --card: #ffffff;
+      --text: #1d2330;
+      --muted: #5b6475;
+      --accent: #0a7c66;
+      --border: #e3e6ec;
+      --badge-bg: #e4f4ef;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f1218;
+        --card: #171b23;
+        --text: #e6e9ef;
+        --muted: #9aa3b2;
+        --accent: #3ccfa8;
+        --border: #262c37;
+        --badge-bg: #133229;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    header, main, footer { max-width: 760px; margin: 0 auto; padding: 0 16px; }
+    header { padding-top: 48px; padding-bottom: 8px; }
+    .brand { display: flex; align-items: center; gap: 12px; font-weight: 700; font-size: 1.1rem; letter-spacing: 0.02em; }
+    .logo { width: 40px; height: 40px; border-radius: 10px; background: var(--accent); display: grid; place-items: center; }
+    .logo svg { width: 24px; height: 24px; }
+    h1 { font-size: 2rem; line-height: 1.2; margin: 28px 0 8px; }
+    .meta { color: var(--muted); margin: 0; }
+    .contact {
+      margin: 28px 0 8px; padding: 20px 22px;
+      background: var(--badge-bg); border-radius: 14px; border: 1px solid var(--border);
+    }
+    .contact h2 { margin-top: 0; }
+    .contact p { margin: 6px 0; }
+    .button {
+      display: inline-block; margin-top: 8px; padding: 10px 18px;
+      background: var(--accent); color: #fff; border-radius: 10px;
+      text-decoration: none; font-weight: 600;
+    }
+    @media (prefers-color-scheme: dark) { .button { color: #0f1218; } }
+    section { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 8px 22px 14px; margin: 16px 0; }
+    h2 { font-size: 1.15rem; margin: 16px 0 6px; }
+    details { border-top: 1px solid var(--border); padding: 12px 0; }
+    details:first-of-type { border-top: none; }
+    summary { cursor: pointer; font-weight: 600; }
+    details p { margin: 8px 0 0; color: var(--text); }
+    a { color: var(--accent); }
+    footer { color: var(--muted); font-size: 0.9rem; padding-top: 24px; padding-bottom: 48px; }
+    @media (max-width: 480px) {
+      h1 { font-size: 1.6rem; }
+      section, .contact { padding-left: 16px; padding-right: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div class="logo" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/>
+        </svg>
+      </div>
+      BeatAnalyzer
+    </div>
+    <h1>Support</h1>
+    <p class="meta">Hilfe und häufige Fragen zu BeatAnalyzer</p>
+  </header>
+
+  <main>
+    <div class="contact">
+      <h2>Kontakt</h2>
+      <p>Du hast eine Frage, ein Problem oder einen Verbesserungsvorschlag? Schreib uns eine E-Mail. Wir antworten in der Regel innerhalb weniger Tage.</p>
+      <p>Bitte gib dabei möglichst dein Gerätemodell, die iOS-Version und die App-Version an.</p>
+      <a class="button" href="mailto:bmengler@me.com?subject=BeatAnalyzer%20Support">Support</a>
+    </div>
+
+    <section>
+      <h2>Häufige Fragen</h2>
+
+      <details>
+        <summary>Warum erkennt BeatAnalyzer die BPM nicht korrekt?</summary>
+        <p>Bei Songs, die keinen durchgehenden Beat oder Beatwechsel haben, kann man keine genaue Angabe machen.</p>
+      </details>
+
+      <details>
+        <summary>Warum kommt in der App kein Audiosignal an?</summary>
+        <p>Vermutlich wurden keine Mikrofonberechtigungen für die App erteilt. Dies passiert beim ersten Start der App oder kann unter Einstellungen -> Datenschutz und Sicherheit nachgeholt werden.</p>
+      </details>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 BeatAnalyzer · <a href="index.html">Datenschutz</a> · <a href="mailto:bmengler@me.com">Kontakt</a>
+  </footer>
+</body>
+</html>
