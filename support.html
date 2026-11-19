@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="de">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>BeatAnalyzer – Support</title>
-  <meta name="description" content="Support und häufige Fragen zur App BeatAnalyzer.">
+  <meta name="description" content="Support and frequently asked questions about the BeatAnalyzer app. / Support und häufige Fragen zur App BeatAnalyzer.">
   <style>
     :root {
       --bg: #f7f8fa;
@@ -41,6 +41,7 @@
     .logo svg { width: 24px; height: 24px; }
     h1 { font-size: 2rem; line-height: 1.2; margin: 28px 0 8px; }
     .meta { color: var(--muted); margin: 0; }
+    .lang-switch { margin: 12px 0 0; font-size: 0.9rem; color: var(--muted); }
     .contact {
       margin: 28px 0 8px; padding: 20px 22px;
       background: var(--badge-bg); border-radius: 14px; border: 1px solid var(--border);
@@ -60,6 +61,7 @@
     summary { cursor: pointer; font-weight: 600; }
     details p { margin: 8px 0 0; color: var(--text); }
     a { color: var(--accent); }
+    .divider { max-width: 760px; margin: 56px auto 0; border: none; border-top: 2px solid var(--border); }
     footer { color: var(--muted); font-size: 0.9rem; padding-top: 24px; padding-bottom: 48px; }
     @media (max-width: 480px) {
       h1 { font-size: 1.6rem; }
@@ -68,44 +70,90 @@
   </style>
 </head>
 <body>
-  <header>
-    <div class="brand">
-      <div class="logo" aria-hidden="true">
-        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/>
-        </svg>
+
+  <!-- ===================== English ===================== -->
+  <div lang="en">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/>
+          </svg>
+        </div>
+        BeatAnalyzer
       </div>
-      BeatAnalyzer
-    </div>
-    <h1>Support</h1>
-    <p class="meta">Hilfe und häufige Fragen zu BeatAnalyzer</p>
-  </header>
+      <h1>Support</h1>
+      <p class="meta">Help and frequently asked questions about BeatAnalyzer</p>
+      <p class="lang-switch"><a href="#deutsch" hreflang="de">Deutsche Version ↓</a></p>
+    </header>
 
-  <main>
-    <div class="contact">
-      <h2>Kontakt</h2>
-      <p>Du hast eine Frage, ein Problem oder einen Verbesserungsvorschlag? Schreib uns eine E-Mail. Wir antworten in der Regel innerhalb weniger Tage.</p>
-      <p>Bitte gib dabei möglichst dein Gerätemodell, die iOS-Version und die App-Version an.</p>
-      <a class="button" href="mailto:bmengler@me.com?subject=BeatAnalyzer%20Support">Support</a>
-    </div>
+    <main>
+      <div class="contact">
+        <h2>Contact</h2>
+        <p>Do you have a question, a problem or a suggestion for improvement? Send us an email. We usually reply within a few days.</p>
+        <p>Please include your device model, iOS version and app version if possible.</p>
+        <a class="button" href="mailto:bmengler@me.com?subject=BeatAnalyzer%20Support">Support</a>
+      </div>
 
-    <section>
-      <h2>Häufige Fragen</h2>
+      <section>
+        <h2>Frequently asked questions</h2>
 
-      <details>
-        <summary>Warum erkennt BeatAnalyzer die BPM nicht korrekt?</summary>
-        <p>Bei Songs, die keinen durchgehenden Beat oder Beatwechsel haben, kann man keine genaue Angabe machen.</p>
-      </details>
+        <details>
+          <summary>Why does BeatAnalyzer not detect the BPM correctly?</summary>
+          <p>For songs without a steady beat or with tempo changes, an accurate value cannot be given.</p>
+        </details>
 
-      <details>
-        <summary>Warum kommt in der App kein Audiosignal an?</summary>
-        <p>Vermutlich wurden keine Mikrofonberechtigungen für die App erteilt. Dies passiert beim ersten Start der App oder kann unter Einstellungen -> Datenschutz und Sicherheit nachgeholt werden.</p>
-      </details>
-    </section>
-  </main>
+        <details>
+          <summary>Why does the app not receive any audio signal?</summary>
+          <p>Microphone permission has probably not been granted for the app. You are asked for it when the app is first launched, and you can grant it later under Settings → Privacy &amp; Security.</p>
+        </details>
+      </section>
+    </main>
+  </div>
+
+  <hr class="divider">
+
+  <!-- ===================== Deutsch ===================== -->
+  <div lang="de" id="deutsch">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/>
+          </svg>
+        </div>
+        BeatAnalyzer
+      </div>
+      <h1>Support</h1>
+      <p class="meta">Hilfe und häufige Fragen zu BeatAnalyzer</p>
+    </header>
+
+    <main>
+      <div class="contact">
+        <h2>Kontakt</h2>
+        <p>Du hast eine Frage, ein Problem oder einen Verbesserungsvorschlag? Schreib uns eine E-Mail. Wir antworten in der Regel innerhalb weniger Tage.</p>
+        <p>Bitte gib dabei möglichst dein Gerätemodell, die iOS-Version und die App-Version an.</p>
+        <a class="button" href="mailto:bmengler@me.com?subject=BeatAnalyzer%20Support">Support</a>
+      </div>
+
+      <section>
+        <h2>Häufige Fragen</h2>
+
+        <details>
+          <summary>Warum erkennt BeatAnalyzer die BPM nicht korrekt?</summary>
+          <p>Bei Songs, die keinen durchgehenden Beat oder Beatwechsel haben, kann man keine genaue Angabe machen.</p>
+        </details>
+
+        <details>
+          <summary>Warum kommt in der App kein Audiosignal an?</summary>
+          <p>Vermutlich wurden keine Mikrofonberechtigungen für die App erteilt. Dies passiert beim ersten Start der App oder kann unter Einstellungen -&gt; Datenschutz und Sicherheit nachgeholt werden.</p>
+        </details>
+      </section>
+    </main>
+  </div>
 
   <footer>
-    © 2026 BeatAnalyzer · <a href="index.html">Datenschutz</a> · <a href="mailto:bmengler@me.com">Kontakt</a>
+    © 2026 BeatAnalyzer · <a href="index.html">Privacy Policy / Datenschutz</a> · <a href="mailto:bmengler@me.com">Contact / Kontakt</a>
   </footer>
 </body>
 </html>
